@@ -25,7 +25,7 @@ a {
 body > header {
     margin-bottom: 20px;
     background: white;
-    box-shadow: 1px 0px 8px rgb(200, 200, 200);
+    box-shadow: 1px 0 8px rgb(200, 200, 200);
 }
 
 header .logo-search form  {
@@ -37,7 +37,7 @@ header .user {
 }
 
 header .user a {
-    font-size: 13px;
+    font-size: 0.813em;
     color: #89949b;
     padding-top: 5px;
 }
@@ -54,13 +54,13 @@ main article {
 h3 {
     color: #b8c3c9;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 0.688em;
     font-weight: normal;
     margin-bottom: 10px;
 }
 
 nav ul li a { 
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: normal;
     color: #828c92;
 }
@@ -85,7 +85,7 @@ nav ul li:last-child {
 
 h1 {
     color: #4b5c66;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: normal;
     margin: 0 0 8px 0;
 }
@@ -102,8 +102,8 @@ h1 {
 
 .stats-links {
     color: #4b5c66;
-    font-size: 12px;
-    padding: 15px 0px 10px 0px;
+    font-size: 0.750em;
+    padding: 15px 0 10px 0;
     border-bottom: 1px solid #e1e6e9;
     margin-bottom: 20px;
 }
@@ -117,13 +117,13 @@ h1 {
 }
 
 .stats-links a {
-    font-size: 12px;
+    font-size: 1em;
     font-weight: normal;
     color: #4b5c66;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 1.250em;
     font-weight: normal;
     color: #4b5c66;
 }
@@ -137,12 +137,12 @@ input.search {
     box-shadow: none;
     height: 28px;
     width: 100%;
-    font-size: 13px;
+    font-size: 0.813em;
     padding: 3px 6px 3px 25px;
     border: 1px solid #d0dde9;
     margin: 0;
     border-radius: 15px;
-    top: 11px;
+    top: 0.688em;
     box-shadow: inset 1px 1px 5px #d5d5d5;
 }
 
@@ -151,7 +151,7 @@ input.submit {
 }
 
 .station {
-    font-size: 12px;
+    font-size: 0.750em;
     color: #008fd5;
     border-radius: 5px;
     border: 1px solid #b8c3c9;
@@ -170,10 +170,9 @@ input.submit {
 
 
 #albums article {
-    font-size: 13px;
+    font-size: 0.813em;
     color: #89949b;
     margin: 10px 0;
-    width: 15%;
 }
 
 #albums article img {
@@ -189,7 +188,7 @@ input.submit {
 
 #albums article figcaption {
     color: #4b5c66;
-    margin-top: 6px;
+    margin-top: 4px;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
@@ -217,6 +216,8 @@ nav a.new { background: url("../img/icon/new.png") no-repeat 0px; }
 nav a.collection { background: url("../img/icon/collection.png") no-repeat 0px; }
 nav a.history { background: url("../img/icon/history.png") no-repeat 0px; }
 
-
-
-
+@media (max-width: 600px) {
+    #search_bar{
+        visibility: hidden;
+    }
+}
